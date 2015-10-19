@@ -2,9 +2,9 @@ AS:=nasm
 ASFLAGS:=-f elf32
 
 CC:=gcc
-CFLAGS:= -m32 -nostdlib -nostdinc -fno-builtin -nostartfiles -nodefaultlibs -c
+CFLAGS:= -m32 -nostdlib -nostdinc -fno-builtin -nostartfiles -nodefaultlibs -c -std=c99
 
-OBJ:=kmain.o loader.o fb.o
+OBJ:=kmain.o loader.o fb.o io.o
 
 all: kernel.elf
 
