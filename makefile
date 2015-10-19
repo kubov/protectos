@@ -4,7 +4,7 @@ ASFLAGS:=-f elf32
 CC:=gcc
 CFLAGS:= -m32 -nostdlib -nostdinc -fno-builtin -nostartfiles -nodefaultlibs -c
 
-OBJ:=kmain.o loader.o
+OBJ:=kmain.o loader.o fb.o
 
 all: kernel.elf
 
